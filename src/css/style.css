@@ -65,6 +65,8 @@ header {
 	justify-content: space-between;
 	position: fixed;
 	margin-bottom: 6.4375rem;
+	background-color: rgba(243, 239, 245, 1);
+	z-index: 999;
 }
 
 header .brand {
@@ -132,5 +134,138 @@ header .right-nav a:nth-child(5):active {
 
 
 /* Beginning of Hero Section */
+.hero-section {
+	display: flex;
+	flex-direction: row;
+	margin-top: 12rem;
+	margin-bottom: 6.25rem;
+}
 
+.hero-section .left-side {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+
+	margin-left: 4.125rem;
+}
+
+.hero-section .left-side .welcome-message {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 110%;
+	color: rgba(13, 10, 11, 1);
+
+	width: 60%;
+}
+
+.hero-section .left-side p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 130%;
+	width: 65%;
+}
+
+.hero-section .left-side .signup-start {
+	font-family: "Poppins", sans-serif;
+	color: rgba(243, 239, 245, 1);
+	font-weight: 500;
+	font-size: 1.125rem;
+	padding: .625rem 1.25rem;
+	border-radius: 10px;
+	background: rgba(13, 10, 11, 1);
+	width: 33%;
+	transition: all .3s;
+	
+}
+
+.hero-section .left-side .signup-start svg {
+	transform: rotate(45deg);
+	margin-right: .625rem;
+}
+
+.hero-section .left-side .signup-start:hover {
+	box-shadow: 0px 6px 0px rgba(13, 10, 11, .45);
+	transform: translateY(0px);
+	svg {
+		transition: all .3s ease-in-out;
+		transform: translateY(-3px) translateX(2px) rotate(45deg);
+	};
+}
+
+.hero-section .left-side .signup-start:active {
+	box-shadow: 0px 3px 0px rgba(13, 10, 11, .45);
+	transform: translateY(3px);
+}
+
+.hero-section .right-side {
+	margin-right: 10.625rem;
+}
 /* End of Hero Section */
+
+/* Start of Offering Section */
+.offer-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.offer-section .offer-header {
+	color: rgba(13, 10, 11, 1);
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	margin-bottom: 3.125rem;
+}
+
+.offer-section .offer-header h1 {
+	font-weight: 700;
+	font-size: 1.4rem;
+	margin: .875rem 0;
+}
+
+.offer-section .offer-header h2 {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.offer-section .offer-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 2.9375rem;
+	margin: 0 3.4375rem 2rem 3.4375rem;
+}
+
+.offer-section .offer-cards .offer-card {
+	font-family: "Poppins", sans-serif;
+
+	border: 1px solid rgba(13, 10, 11, 1);
+	padding: 2.1875rem 1.4375rem;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.offer-section .offer-cards .offer-card h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 105%;
+	margin-bottom: .9375rem;
+}
+
+.offer-section .offer-cards .offer-card p {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 115%;
+	margin-bottom: 1rem;
+}
+
+.offer-section .offer-cards .offer-card:hover {
+	transform: translateY(2px);
+	box-shadow: -10px 10px 4px rgba(13, 10, 11, .5);
+}
+/* End of Offering Section */
+
+/* Beginning of Course Section */
+
+
+/* End of Course Section */
