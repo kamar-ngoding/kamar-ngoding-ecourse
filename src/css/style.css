@@ -47,6 +47,7 @@ table {
 html {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	cursor: url('../../assets/cursors/default.svg'), default;
 }
 
 body {
@@ -54,6 +55,15 @@ body {
 	max-width: 100vw;
 	width: 100vw; /* Agar responsif */
 	overflow-x: hidden;
+}
+
+/* Cursor Section */
+h1, h2, h3, h4, h5, h6, p{
+	cursor: url(../../assets/cursors/text.svg), text;
+}
+
+a, button {
+	cursor: url('../../assets/cursors/pointer.svg'), pointer;
 }
 
 /* Header / Navigation Bar Start Section */
@@ -266,6 +276,347 @@ header .right-nav a:nth-child(5):active {
 /* End of Offering Section */
 
 /* Beginning of Course Section */
+.course-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 8.438rem;
+}
 
+.course-section .heading {
+	color: rgba(13, 10, 11, 1);
+	font-family: "Poppins", sans-serif;
+	margin: 3.125rem 3.5rem;
 
+	display: flex;
+	gap: 1.875rem;
+}
+
+.course-section .heading h1 {
+	font-weight: 700;
+	font-size: 1.4rem;
+	display: inline-block;
+	background-color: rgba(169, 222, 249, 1);
+	padding-bottom: 1rem;
+	max-width: 160px;
+	width: 100%;
+}
+.course-section .course-cards {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"item-1 item-2"
+	"item-3 item-4"
+	;
+	margin: .5rem 2.813rem;
+	gap: 3.75rem;
+}
+
+.course-section .course-cards .course-card {
+	font-family: "Poppins", sans-serif;
+	padding: 2.5rem 2.625rem;
+	border: 1px solid rgba(13, 10, 11, 1);
+	background-color: #fff;
+	border-radius: 40px;
+	max-width: 645px;
+	max-height: 245px;
+	width: 85%;
+	transition: all .3s;
+}
+
+.course-section .course-cards .course-card:hover {
+	transform: translateY(-10px);
+	box-shadow: -5px 5px 0px rgba(13, 10, 11, .45);
+}
+
+.course-section .course-cards .course-card h1 {
+	font-size: 2.125rem;
+	font-weight: 700;
+	line-height: 105%;
+	margin-bottom: .9375rem;
+	display: inline-block;
+}
+
+.course-section .course-cards .course-card p {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 115%;
+	margin-bottom: 1rem;
+	text-align: justify;
+}
+
+.course-section .course-cards .course-card:nth-child(1) {
+	grid-area: item-1;
+}
+
+.course-section .course-cards .course-card:nth-child(1) h1 {
+	background-color: rgba(169, 222, 249, 1);
+}
+
+.course-section .course-cards .course-card:nth-child(2) {
+	grid-area: item-2;
+	background-color: rgba(13, 10, 11, 1);
+	color: rgba(243, 239, 245, 1);
+}
+
+.course-section .course-cards .course-card:nth-child(2) h1 {
+	background-color: rgba(243, 239, 245, 1);
+	color: rgba(13, 10, 11, 1);
+}
+
+.course-section .course-cards .course-card:nth-child(3) {
+	grid-area: item-3;
+	background-color: rgba(13, 10, 11, 1);
+	color: rgba(243, 239, 245, 1);
+}
+
+.course-section .course-cards .course-card:nth-child(3) h1 {
+	background-color: rgba(243, 239, 245, 1);
+	color: rgba(13, 10, 11, 1);
+}
+
+.course-section .course-cards .course-card:nth-child(4) {
+	grid-area: item-4;
+}
+
+.course-section .course-cards .course-card:nth-child(4) h1 {
+	background-color: rgba(169, 222, 249, 1);
+}
 /* End of Course Section */
+
+/* Start of Community Section */
+.community-section {
+	background-color: #fff;
+	display: flex;
+	gap: 4.25rem;
+	margin: 5.5rem 4.375rem;
+	padding: 3.625rem 6.25rem 4.688rem 2.688rem;
+	border-radius: 40px;
+	border: 1px solid rgba(13, 10, 11, 1);
+	transition: all .3s;
+}
+
+.community-section:hover {
+	transform: translateY(-10px);
+	box-shadow: -8px 8px 0px rgba(13, 10, 11, .45);
+}
+
+.community-section .community-contents {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	color: rgba(13, 10, 11, 1);
+	font-family: "Poppins", sans-serif;
+}
+
+.community-section .community-contents h1 {
+	font-size: 2.125rem;
+	font-weight: 700;
+}
+
+.community-section .community-contents p {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.community-section .community-contents .community-button {
+	font-family: "Poppins", sans-serif;
+	color: rgba(243, 239, 245, 1);
+	font-weight: 500;
+	font-size: 1.125rem;
+	padding: .625rem 1.25rem;
+	border-radius: 10px;
+	background: rgba(13, 10, 11, 1);
+	width: 38%;
+	transition: all .3s;
+}
+
+.community-section .community-contents .community-button svg {
+	transform: rotate(45deg);
+	margin-right: .625rem;
+}
+
+.community-section .community-contents .community-button:hover {
+	box-shadow: 0px 6px 0px rgba(13, 10, 11, .45);
+	transform: translateY(3px);
+	svg {
+		transition: all .3s ease-in-out;
+		transform: translateY(-3px) translateX(2px) rotate(45deg);
+	};
+}
+
+.community-section .community-contents .community-button:active {
+	box-shadow: 0px 3px 0px rgba(13, 10, 11, .45);
+	transform: translateY(3px);
+}
+/* End of Community Section */
+
+/* Start of Register Card Section */
+.register-card-section {
+	display: flex;
+	gap: 4.25rem;
+	background-color: rgba(13, 10, 11, 1);
+	padding: 1.688rem 3.125rem 1.688rem 3.875rem;
+	margin: 5.5rem 4.375rem;
+	border-radius: 40px;
+	transition: all .3s;
+}
+
+.register-card-section:hover {
+	transform: translateY(-10px);
+	box-shadow: -8px 8px 0px rgba(13, 10, 11, .45);
+}
+
+.register-card-section .register-card-contents {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-top: 3.625rem;
+	color: rgba(243, 239, 245, 1);
+	font-family: "Poppins", sans-serif;
+}
+
+.register-card-section .register-card-contents h1 {
+	font-size: 2.125rem;
+	font-weight: 700;
+}
+
+.register-card-section .register-card-contents p {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.register-card-section .register-card-contents .register-button {
+	font-family: "Poppins", sans-serif;
+	background: rgba(13, 10, 11, 0);
+	color: rgba(243, 239, 245, 1);
+	font-weight: 500;
+	font-size: 1.125rem;
+	padding: .625rem 1.25rem;
+	border-radius: 10px;
+	border: 1px solid rgba(243, 239, 245, 1);
+	width: 32%;
+	transition: all .3s;
+}
+
+.register-card-section .register-card-contents .register-button svg {
+	transform: rotate(45deg);
+	margin-right: .625rem;
+}
+
+.register-card-section .register-card-contents .register-button:hover {
+	background: rgba(243, 239, 245, 1);
+	color: rgba(13, 10, 11, 1);
+	box-shadow: 0px 6px 0px rgba(243, 239, 245, .45);
+	transform: translateY(3px);
+	svg {
+		transition: all .3s ease-in-out;
+		transform: translateY(-3px) translateX(2px) rotate(45deg);
+	};
+	svg path {
+		fill: rgba(13, 10, 11, 1);
+	};
+}
+
+.register-card-section .register-card-contents .register-button:active {
+	box-shadow: 0px 3px 0px rgba(243, 239, 245, .45);
+	transform: translateY(3px);
+}
+/* End of Register Card Section */
+
+/* Start of Footer Section */
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(13, 10, 11, 1);
+	gap: 5rem;
+	padding: 4rem 5.313rem 1.875rem 5.313rem;
+}
+
+footer .footer-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10.313rem;
+}
+
+footer .footer-container .footer-informations {
+	display: flex;
+	flex-direction: column;
+	gap: .938rem;
+	font-family: "Poppins", sans-serif;
+	color: rgba(243, 239, 245, 1);
+}
+
+footer .footer-container .footer-informations h3 {
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+footer .footer-container .footer-informations h4 {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+footer .footer-container .footer-informations .email-address {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+footer .footer-container .footer-informations .email-address svg {
+	transform: translateY(3px);
+}
+
+footer .footer-container .footer-informations .social-media-links {
+	margin-top: 1rem;
+}
+
+footer .footer-container .footer-informations .social-media-links a {
+	text-decoration: none;
+	margin: .3rem;
+}
+
+footer .footer-container .footer-informations .social-media-links a svg {
+	transition: all .3s;
+}
+
+footer .footer-container .footer-informations .social-media-links a svg:hover {
+	transform: translateY(-5px);
+}
+
+footer .footer-container .footer-links {
+	display: flex;
+	flex-direction: row;
+	gap: 6.875rem;
+	font-family: "Poppins", sans-serif;
+	margin-top: 2rem;
+}
+
+footer .footer-container .footer-links .Category, .resources {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+footer .footer-container .footer-links .Category h2, .resources h2 {
+	color: rgba(243, 239, 245, 1);
+	font-size: 1.125rem;
+	font-weight: 800;
+}
+
+footer .footer-container .footer-links .Category a, .resources a {
+	text-decoration: none;
+	color: rgba(243, 239, 245, 1);
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+footer .footer-copyright {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	color: rgba(243, 239, 245, 1);
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+/* End of Footer Section */
